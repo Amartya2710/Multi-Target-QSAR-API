@@ -13,3 +13,7 @@ env/
 # Mac/Windows system files
 .DS_Store
 Thumbs.db
+# .gitignore
+*.env
+.env
+credentials.csv
