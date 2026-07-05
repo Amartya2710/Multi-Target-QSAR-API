@@ -1,3 +1,16 @@
+
+## Live Demo
+Deployed on AWS EC2 (Mumbai region) with models stored on S3.
+
+- Interactive API docs: http://13.235.104.167:8001/docs
+- Prediction endpoint:  POST http://13.235.104.167:8001/predict
+
+### Example request
+curl -X POST http://13.235.104.167:8001/predict \
+     -H "Content-Type: application/json" \
+     -d '{"smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1"}'
+
+
 🧬 Multi-Target QSAR Predictor API (EGFR & BRAF)A production-ready, containerized FastAPI microservice that predicts the inhibitory activity of compounds against two critical oncology targets: EGFR and BRAF (CHEMBL5145).
 
 This API goes beyond standard classification by implementing an Applicability Domain (AD) filter to actively intercept and flag structurally alien molecules, preventing mathematical extrapolation errors common in tree-based machine learning models.
