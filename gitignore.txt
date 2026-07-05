@@ -17,3 +17,15 @@ Thumbs.db
 *.env
 .env
 credentials.csv
+# AWS Credentials and Environment Variables
+.env
+*.csv
+credentials.csv
+accessKeys.csv
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Local Machine Learning Models (These now live in S3!)
+*.pkl
